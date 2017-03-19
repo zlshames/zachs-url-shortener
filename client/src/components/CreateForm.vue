@@ -52,7 +52,7 @@
         this.shortened = ''
 
         // Shorten URL
-        fetch('http://localhost:3000/url', {
+        fetch('/url', {
           method: 'POST',
           headers: {
             'Accept': 'application/json, text/plain, */*',

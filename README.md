@@ -8,6 +8,10 @@
     * Koa Bodyparser
 * Knex (SQL ORM) - http://knexjs.org/
     * Migrations
+* VueJS 2
+
+### Screenshot
+![alt text](https://i.imgur.com/0ffdGJK.png "Screenshot")
 
 ### Initial Setup
 ```
