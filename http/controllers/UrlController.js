@@ -22,11 +22,6 @@ export default class UrlController {
       return SendError(ctx, 400, 'Please provide a URL!')
     }
 
-    // Get rid of the http:// for storage purposes
-    if (urlInfo.url.indexOf('http://') > -1) {
-      urlInfo.url = urlInfo.url.replace('http://', '')
-    }
-
     // Generate random string if no path provided
     if (!urlInfo.path) {
       urlInfo.path = randomstring.generate(10)
@@ -75,6 +70,6 @@ export default class UrlController {
       return SendError(ctx, 400, 'This shortened URL does not exist!')
     }
 
-    ctx.redirect(`http://${ url.url }`)
+    ctx.redirect(url.url)
   }
 }
